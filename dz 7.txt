@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class Ball {
+private:
+ string m_color = "Red ";
+ double m_Radius = 20.0;
+public:
+ Ball(string color, double radius):
+  m_color{color}, m_Radius{radius}{}
+ void print() {
+  cout << "Color: " << m_color << ", Radius: " << m_Radius << "\n";
+ }
+};
+ 
+int main()
+{
+ Ball redTwenty("red", 20.0);
+ redTwenty.print();
+ 
+ Ball blackTwenty("black", 20.0);
+ blackTwenty.print();
+ 
+ Ball redThirty("red", 30.0);
+ redThirty.print();
+ 
+ Ball blackThirty("black", 30.0);
+ blackThirty.print();
+ return 0;
+}
+
+
